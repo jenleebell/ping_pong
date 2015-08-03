@@ -3,7 +3,9 @@ class Fixnum
     array = []
     total = (1..self)
     total.each() do |num|
-      if (num.%(3) == 0)
+      if (num.%(15) == 0)
+      array.push("ping-pong")
+      elsif (num.%(3) == 0)
         array.push("ping")
       elsif (num.%(5) == 0)
         array.push("pong")

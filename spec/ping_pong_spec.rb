@@ -18,3 +18,9 @@ describe('Fixnum#ping_pong?') do
     expect((7).ping_pong()).to(eq([1, 2, "ping", 4, "pong", "ping", 7]))
   end
 end
+
+describe('Fixnum#ping_pong?') do
+  it("any number divisible by 3 and 5 is replaced with ping-pong") do
+    expect((16).ping_pong()).to(eq([1, 2, "ping", 4, "pong", "ping", 7, 8, "ping", "pong", 11, "ping", 13, 14, "ping-pong", 16]))
+  end
+end

@@ -5,6 +5,8 @@ class Fixnum
     total.each() do |num|
       if (num.%(3) == 0)
         array.push("ping")
+      elsif (num.%(5) == 0)
+        array.push("pong")
       else
         array.push(num)
 

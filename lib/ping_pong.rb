@@ -3,8 +3,13 @@ class Fixnum
     array = []
     total = (1..self)
     total.each() do |num|
-      array.push(num)
-  end
+      if (num.%(3) == 0)
+        array.push("ping")
+      else
+        array.push(num)
+
+      end
+    end
   array
 end
 end
